@@ -1,5 +1,7 @@
 package it.epicode.be.godfather.model;
 
+import org.springframework.context.annotation.Scope;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
@@ -7,6 +9,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @Setter
 @Getter
+
 public class Franchise implements MenuItem {
 	
 	private String name;

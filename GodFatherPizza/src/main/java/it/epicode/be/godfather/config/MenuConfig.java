@@ -23,6 +23,7 @@ import it.epicode.be.godfather.model.ToppingHam;
 public class MenuConfig {
 
 	@Bean
+	@Scope("singleton")
 	public Menu menu() {
 
 		Menu menu = new Menu();
@@ -44,26 +45,31 @@ public class MenuConfig {
 	}
 
 	@Bean
+	@Scope("prototype")
 	public PizzaMargherita pizzaMargherita() {
 		return new PizzaMargherita();
 	}
 
 	@Bean
+	@Scope("prototype")
 	public PizzaHawaiian pizzaHawaiian() {
 		return new PizzaHawaiian();
 	}
 
 	@Bean
+	@Scope("prototype")
 	public PizzaSalami pizzaSalami() {
 		return new PizzaSalami();
 	}
 
 	@Bean
+	@Scope("prototype")
 	public Drink drinkLemonade() {
 		return new DrinkLemonade();
 	}
 	
 	@Bean
+	@Scope("prototype")
 	public Franchise franchiseMug() {
 		return new FranchiseMug();
 	}

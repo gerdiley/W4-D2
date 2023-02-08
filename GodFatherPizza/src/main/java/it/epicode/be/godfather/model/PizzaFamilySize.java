@@ -1,5 +1,13 @@
 package it.epicode.be.godfather.model;
 
+import org.springframework.context.annotation.Scope;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+
 public class PizzaFamilySize implements Pizza {
 
 	private Pizza pizza;
